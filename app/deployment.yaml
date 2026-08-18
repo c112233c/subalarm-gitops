@@ -20,7 +20,7 @@ spec:
       containers:
       - name: subalarm
 
-        image: ghcr.io/c112233c/subalarm:latest
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
 
         imagePullPolicy: Always
 
